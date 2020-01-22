@@ -11,9 +11,6 @@ module.exports = {
   webpack(config) {
     config.resolve.alias['@app'] = path.join(__dirname, 'client/src');
 
-    config.plugins = config.plugins || [];
-    config.plugins = [...config.plugins];
-
     return config;
   }
 };

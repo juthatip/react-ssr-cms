@@ -18,7 +18,6 @@ app
     server.use(cors());
 
     server.use(cookieParser());
-    // server.use(detectLocale);
 
     server.get('/healthcheck/', (req, res) => {
       res.sendStatus(200);
